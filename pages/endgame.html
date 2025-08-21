@@ -5,97 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>CoreLand - End-Game</title>
   <link rel="icon" type="image/png" href="../images/favicon.png" />
-  <link rel="stylesheet" href="../style.css" />
-
-  <style>
-    .soon-title {
-      font-size: clamp(2.2rem, 5vw, 4rem);
-      font-weight: 800;
-      line-height: 1.1;
-      margin-bottom: 8px;
-      background: linear-gradient(90deg, #ff9800, #ff5722, #ffcc00, #ff9800);
-      background-size: 300% 100%;
-      -webkit-background-clip: text;
-      background-clip: text;
-      -webkit-text-fill-color: transparent;
-      animation: gradient-move 6s linear infinite;
-      letter-spacing: 1px;
-      text-transform: uppercase;
-      text-align: center;
-    }
-    @keyframes gradient-move { to { background-position: 100% 0; } }
-
-    .soon-subtitle {
-      text-align: center;
-      color: #cfcfcf;
-      margin-bottom: 18px;
-      font-size: 1.05rem;
-    }
-
-    .soon-badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      background: #1a1a1a;
-      border: 1px solid #2a2a2a;
-      border-radius: 999px;
-      padding: 6px 12px;
-      font-size: 0.9rem;
-      margin: 0 auto 18px;
-      color: #fff;
-    }
-
-    .dots { display: inline-flex; gap: 6px; margin-left: 6px; }
-    .dot { width: 6px; height: 6px; border-radius: 50%; background: #ff9800; opacity: 0.5; animation: pop 1.2s infinite; }
-    .dot:nth-child(2) { animation-delay: 0.2s; }
-    .dot:nth-child(3) { animation-delay: 0.4s; }
-    @keyframes pop { 0%, 80%, 100% { transform: scale(0.7); opacity: 0.4; } 40% { transform: scale(1.2); opacity: 1; } }
-
-    .btn-primary {
-      display: inline-block;
-      padding: 10px 16px;
-      background: linear-gradient(135deg, gold, orange);
-      color: #000;
-      font-weight: 700;
-      border-radius: 10px;
-      text-decoration: none;
-      box-shadow: 0 0 10px rgba(255, 165, 0, 0.5);
-      transition: transform .2s ease, box-shadow .2s ease, filter .2s ease;
-    }
-    .btn-primary:hover { transform: translateY(-2px) scale(1.03); box-shadow: 0 0 16px rgba(255,165,0,.9); filter: brightness(1.05); }
-
-    .soon-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 16px; margin-top: 22px; }
-    .soon-card {
-      background: #1e1e1e;
-      border: 1px solid #2a2a2a;
-      border-radius: 12px;
-      padding: 18px;
-      position: relative;
-      overflow: hidden;
-    }
-    .soon-card h3 { font-size: 1.1rem; margin-bottom: 6px; }
-    .soon-card p { color: #cfcfcf; font-size: .95rem; }
-    .soon-lock {
-      position: absolute;
-      top: 12px; right: 12px;
-      font-size: 18px;
-      opacity: .6;
-    }
-    .soon-ribbon {
-      position: absolute;
-      top: 12px; left: -40px;
-      background: #ff9800;
-      color: #000;
-      font-weight: 800;
-      padding: 6px 50px;
-      transform: rotate(-12deg);
-      border-radius: 6px;
-      box-shadow: 0 4px 12px rgba(0,0,0,.4);
-    }
-
-    .centered { display: flex; flex-direction: column; align-items: center; }
-    .soft { color: #bdbdbd; }
-  </style>
+  <link rel="stylesheet" href="../style.css">
 </head>
 
 <body>
@@ -104,20 +14,19 @@
     <nav>
       <ul>
         <li><a href="../index.html">Accueil</a></li>
-        <li><a href="../pages/grade.html">Grade</a></li>
-        <li><a href="../pages/commandes.html">Commandes</a></li>
         <li><a href="../pages/minerais.html">Minerais</a></li>
         <li><a href="../pages/machines.html">Machines</a></li>
         <li><a href="../pages/jobs.html">Métiers</a></li>
         <li><a href="../pages/other.html">Utilitaire</a></li>
         <li><a href="../pages/luckyblock.html">Lucky-Blocks</a></li>
+        <li><a href="../pages/grade.html">Grade</a></li>
+        <li><a href="../pages/commandes.html">Commandes</a></li>
         <li><a href="../pages/regles.html">Règles</a></li>
         <li><a href="../pages/endgame.html">End-Game</a></li>
       </ul>
     </nav>
   </header>
 
-  <!-- HERO -->
   <section class="hero">
     <div class="overlay">
       <h1>🏁 End-Game</h1>
