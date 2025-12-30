@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CoreLand - End-Game</title>
-  <link rel="icon" type="image/png" href="../images/favicon.png" />
+  <link rel="icon" type="image/png" href="../images/favicon.png">
+  <script src="../script.js"></script>
   <link rel="stylesheet" href="../style.css">
 </head>
-
 <body>
   <header>
     <h1>End-Game - CoreLand</h1>
@@ -16,13 +16,12 @@
         <li><a href="../index.html">Accueil</a></li>
         <li><a href="../pages/minerais.html">Minerais</a></li>
         <li><a href="../pages/machines.html">Machines</a></li>
-        <li><a href="../pages/jobs.html">Métiers</a></li>
         <li><a href="../pages/other.html">Utilitaire</a></li>
         <li><a href="../pages/luckyblock.html">Lucky-Blocks</a></li>
         <li><a href="../pages/grade.html">Grade</a></li>
         <li><a href="../pages/commandes.html">Commandes</a></li>
         <li><a href="../pages/regles.html">Règles</a></li>
-        <li><a href="../pages/endgame.html">End-Game</a></li>
+        <li><a href="../pages/endgame.html" class="magistral-color">Le Plutonium</a></li>
       </ul>
     </nav>
   </header>
@@ -35,35 +34,233 @@
   </section>
 
   <main class="layout">
-    <section class="content centered">
-      <span class="soon-badge">Phase de préparation <span class="dots"><span class="dot"></span><span class="dot"></span><span class="dot"></span></span></span>
-      <h2 class="soon-title">Coming Soon</h2>
-      <p class="soon-subtitle">L'end-game est en développement : nouveaux boss, donjons, artefacts et classements.</p>
-      <a class="btn-primary" href="https://discord.gg/Fa6TtxxXSB" target="_blank">Être notifié sur Discord</a>
 
-      <div class="soon-grid" style="width: 100%;">
-        <article class="soon-card">
-          <div class="soon-ribbon">Bientôt</div>
-          <div class="soon-lock">🔒</div>
-          <h3>⚔️ Nouveaux items</h3>
-          <p>Récupérer des items et faites-en bon usage.</p>
-        </article>
-        <article class="soon-card">
-          <div class="soon-ribbon">Bientôt</div>
-          <div class="soon-lock">🔒</div>
-          <h3>🏰 Nouvelles mecaniques</h3>
-          <p>Créer et utiliser de nouvelles mécaniques de jeu.</p>
-        </article>
-        <article class="soon-card">
-          <div class="soon-ribbon">Bientôt</div>
-          <div class="soon-lock">🔒</div>
-          <h3>💎 Nouvelles machines</h3>
-          <p>Composez des sets d'items end-game exclusifs.</p>
-        </article>
-      </div>
-
-      <p class="soft" style="margin-top:16px; font-size:.95rem;">Astuce : gardez vos ressources rares et préparez vos meilleures machines. L'aventure finale arrive !</p>
+    <!-- Tableau 1 : Nouveaux Items -->
+    <section class="content" id="new-items">
+      <h2>⚔️ Nouveaux Items</h2>
+      <table>
+        <tr>
+          <th>Icône</th>
+          <th>Nom</th>
+          <th>Rareté</th>
+          <th>Description</th>
+          <th>Comment l'avoir ?</th>
+        </tr>
+        <tr>
+          <td><img src="../images/items/plutonium_ingot.png" alt="Plutonium" class="ore-img"></td>
+          <td>Lingot de Plutonium</td>
+          <td class="magistral-color">Mythique</td>
+          <td>Élément clé du end-game, utilisé pour les crafts nucléaires.</td>
+          <td>
+            <a href="../pages/plutonium.html" class="magistral-color">Voir comment faire.</a>
+          </td>
+        </tr>
+        <tr>
+          <td><img src="../images/items/nuclear_waste.png" alt="nuclear_waste" class="ore-img"></td>
+          <td>Déchet nucléaire</td>
+          <td>Commun</td>
+          <td>Uniquement de vieux déchet nucléaire.</td>
+          <td>Lors de la création de l'énergie du réacteur.</td>
+        </tr>
+      </table>
     </section>
+
+    <!-- Tableau 2 : Machines -->
+    <section class="content" id="new-reactor">
+      <h2 >🏭 Réacteur nucléaire</h2>
+      <table>
+        <tr>
+          <th>Icône</th>
+          <th>Nom</th>
+          <th>Utilité</th>
+          <th>Craft</th>
+        </tr>
+        <tr>
+          <td><img src="../images/blocks/core_generator.png" alt="core_generator" class="ore-img" id="core_generator"></td>
+          <td>Coeur du générateur nucléaire</td>
+          <td>Produit une énergie massive grâce au plutonium.</td>
+          <td>
+          <div class="minecraft-inventory">
+            <div class="slot"><img src="../images/items/nether_star.png" alt="nether_star" title="Etoile du nether"></div>
+            <div class="slot"><img src="../images/items/plutonium_heart.png" alt="plutonium_heart" title="Coeur en Plutonium"></div>
+            <div class="slot"><img src="../images/items/nether_star.png" alt="nether_star" title="Etoile du nether"></div>
+            <div class="slot"><img src="../images/items/steel_plate.png" alt="steel_plate" title="Plaque en acier"></div>
+            <div class="slot"><img src="../images/items/perfect_circuit.png" alt="perfect_circuit" title="Circuit parfait"></div>
+            <div class="slot"><img src="../images/items/steel_plate.png" alt="steel_plate" title="Plaque en acier"></div>
+            <div class="slot"><img src="../images/blocks/steel_block.png" alt="steel_block" title="Block d'acier"></div>
+            <div class="slot"><img src="../images/items/steel_plate.png" alt="steel_plate" title="Plaque en acier"></div>
+            <div class="slot"><img src="../images/blocks/steel_block.png" alt="steel_block" title="Block d'acier"></div>
+          </div>
+        </td>
+        </tr>
+        <tr>
+          <td><img src="../images/blocks/reactor_casing.png" alt="reactor_casing" class="ore-img" id="reactor_casing"></td>
+          <td>Boîtier de Réacteur</td>
+          <td>Permet d'isolé le noyaux d'une très grosse chaleur.</td>
+          <td>
+            <div class="minecraft-inventory">
+            <div class="slot"><img src="../images/blocks/crying_obsidian.png" alt="crying_obsidian" title="Obsidienne pleureuse"></div>
+            <div class="slot"><img src="../images/blocks/steel_block.png" alt="steel_block" title="Block d'Acier"></div>
+            <div class="slot"><img src="../images/blocks/crying_obsidian.png" alt="crying_obsidian" title="Obsidienne pleureuse"></div>
+            <div class="slot"><img src="../images/blocks/steel_block.png" alt="steel_block" title="Block d'Acier"></div>
+            <div class="slot"><img src="../images/blocks/crying_obsidian.png" alt="crying_obsidian" title="Obsidienne pleureuse"></div>
+            <div class="slot"><img src="../images/blocks/steel_block.png" alt="steel_block" title="Block d'Acier"></div>
+            <div class="slot"><img src="../images/blocks/crying_obsidian.png" alt="crying_obsidian" title="Obsidienne pleureuse"></div>
+            <div class="slot"><img src="../images/blocks/steel_block.png" alt="steel_block" title="Block d'Acier"></div>
+            <div class="slot"><img src="../images/blocks/crying_obsidian.png" alt="crying_obsidian" title="Obsidienne pleureuse"></div>
+          </div>
+          </td>
+        </tr>
+        <tr>
+          <td><img src="../images/blocks/reactor_casing_output.png" alt="reactor_casing_output" class="ore-img" id="reactor_casing_output"></td>
+          <td>Boîtier de Réacteur (Sortie de l'énergie) </td>
+          <td>Permet d'extraire l'énergie élécrtique du réacteur nucléaire.</td>
+          <td>
+            <div class="minecraft-inventory">
+            <div class="slot"><img src="../images/items/jadeite_plate.png" alt="jadeite_plate" title="Plaque en Jadeite"></div>
+            <div class="slot"><img src="../images/items/jadeite_heart.png" alt="jadeite_heart" title="Coeur en Jadeite"></div>
+            <div class="slot"><img src="../images/items/jadeite_plate.png" alt="jadeite_plate" title="Plaque en Jadeite"></div>
+            <div class="slot"><img src="../images/items/copper_ingot.png" alt="copper_ingot" title="Lingot de cuivre"></div>
+            <div class="slot"><img src="../images/items/gold_ingot.png" alt="gold_ingot" title="Lingot d'or"></div>
+            <div class="slot"><img src="../images/items/copper_ingot.png" alt="copper_ingot" title="Lingot de cuivre"></div>
+            <div class="slot"><img src="../images/items/gold_ingot.png" alt="gold_ingot" title="Lingot d'or"></div>
+            <div class="slot"><img src="../images/items/copper_ingot.png" alt="copper_ingot" title="Lingot de cuivre"></div>
+            <div class="slot"><img src="../images/items/gold_ingot.png" alt="gold_ingot" title="Lingot d'or"></div>
+          </div>
+          </td>
+        </tr>
+        <tr>
+          <td><img src="../images/blocks/panel_reactor.png" alt="panel_reactor" class="ore-img" id="panel_reactor"></td>
+          <td>Panel du reacteur</td>
+          <td>Permet d'intéragir avec le réacteur nucléaire en tout sécurité.</td>
+          <td>
+            <div class="minecraft-inventory">
+            <div class="slot"><img src="../images/items/jadeite_plate.png" alt="jadeite_plate" title="Plaque en Jadeite"></div>
+            <div class="slot"><img src="../images/items/jadeite_heart.png" alt="jadeite_heart" title="Coeur en Jadeite"></div>
+            <div class="slot"><img src="../images/items/jadeite_plate.png" alt="jadeite_plate" title="Plaque en Jadeite"></div>
+            <div class="slot"><img src="../images/items/copper_ingot.png" alt="copper_ingot" title="Lingot de cuivre"></div>
+            <div class="slot"><img src="../images/items/gold_ingot.png" alt="gold_ingot" title="Lingot d'or"></div>
+            <div class="slot"><img src="../images/items/copper_ingot.png" alt="copper_ingot" title="Lingot de cuivre"></div>
+            <div class="slot"><img src="../images/items/gold_ingot.png" alt="gold_ingot" title="Lingot d'or"></div>
+            <div class="slot"><img src="../images/items/copper_ingot.png" alt="copper_ingot" title="Lingot de cuivre"></div>
+            <div class="slot"><img src="../images/items/gold_ingot.png" alt="gold_ingot" title="Lingot d'or"></div>
+          </div>
+          </td>
+        </tr>
+      </table>
+    </section>
+
+    <!-- Tableau 3 : Boss -->
+    <section class="content">
+  <h2>🧰 Structure nucléaire</h2>
+  <p class="legend">
+    <strong>Légende :</strong>
+      <a href="#reactor_casing" class="legend-f">F</a> = Boîtier de Réacteur |
+      <a href="#core_generator" class="legend-c">C</a> = Cœur du générateur nucléaire |
+      <a href="#reactor_casing_output" class="legend-u">U</a> = Sortie d'énergie
+  </p>
+  <table class="structure-table">
+    <thead>
+      <tr>
+        <th>Couche 1</th>
+        <th>Couche 2</th>
+        <th>Couche 3</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          <pre>
+F - F - F
+F - F - F
+F - F - F
+          </pre>
+        </td>
+        <td>
+          <pre>
+F - F - F
+F - C - F
+F - F - F
+          </pre>
+        </td>
+        <td>
+          <pre>
+F - F - F
+F - U - F
+F - F - F
+          </pre>
+        </td>
+      </tr>
+      <tr>
+        <td><img src="../images/structure/1.png" alt="Couche 1"></td>
+        <td><img src="../images/structure/2.png" alt="Couche 2"></td>
+        <td><img src="../images/structure/3.png" alt="Couche 3"></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="note-box">
+  <p class="note-title">⚠️ Note</p>
+  <p>
+    Le panel du reacteur est obligatoire pour gérer le réacteur.
+    Placez le à coté du réacteur, pas loin, il ne sera pas connecter.
+  </p>
+</div>
+
+  <pre>
+
+    </pre>
+
+  <section class="explication">
+  <h3>⚙️ Fonctionnement</h3>
+  <table class="explication-table">
+    <thead>
+      <tr>
+        <th>Image</th>
+        <th >Item Accpeté</th>
+        <th>Nom</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+  <tr>
+    <td><img src="../images/gui/core_generator_gui_full_pluto.png" alt="Réacteur rempli de Plutonium" width="256"></td>
+    <td><div class="ore-img"><img src="../images/items/plutonium_flux.png" alt="plutonium_flux" title="Flux de Plutonium"></div></td>
+    <td><strong>Réacteur rempli de Plutonium</strong></td>
+    <td>Le réacteur fonctionne à pleine puissance grâce au Plutonium. Il produit une grande quantité d’énergie.</td>
+  </tr>
+  <tr>
+    <td><img src="../images/gui/core_generator_gui_full_dechet.png" alt="Réacteur rempli de déchets nucléaires" width="256"></td>
+    <td><div class="ore-img"><img src="../images/items/nuclear_waste.png" alt="nuclear_waste" title="Déchet nucléaire"></div></td>
+    <td><strong>Réacteur rempli de déchets nucléaires</strong></td>
+    <td>Le réacteur est saturé de déchets radioactifs. Il ne produit plus d’énergie et doit être vidé.</td>
+  </tr>
+  <tr>
+    <td><img src="../images/gui/core_generator_gui_full_temp.png" alt="Réacteur en surchauffe" width="256"></td>
+    <td><div class="ore-img"><img src="../images/blocks/ice_block.gif" alt="ice_block" title="Block de glace"></div></td>
+    <td><strong>Réacteur en surchauffe (explosion imminente)</strong></td>
+    <td>La température est trop élevée ! Le réacteur risque d’exploser si aucune mesure de refroidissement n’est prise.</td>
+  </tr>
+
+  <tr>
+    <td><img src="../images/gui/prod.png" alt="prod" width="256"></td>
+    <td>❌</td>
+    <td><strong>Production éléctrique</strong></td>
+    <td>Survolé le carré vert et vous aurez la production d’énergie.</td>
+  </tr>
+
+  <tr>
+    <td><img src="../images/gui/stock.png" alt="stock" width="256"></td>
+    <td>❌</td>
+    <td><strong>Stockage d'énergie</strong></td>
+    <td>Un stockage interne de 1Md de PlutoniumFlux est disponible...</td>
+  </tr>
+</tbody>
+  </table>
+</section>
+
+</section>
+
   </main>
 
   <footer>

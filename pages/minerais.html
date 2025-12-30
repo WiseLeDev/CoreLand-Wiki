@@ -14,13 +14,12 @@
         <li><a href="../index.html">Accueil</a></li>
         <li><a href="../pages/minerais.html">Minerais</a></li>
         <li><a href="../pages/machines.html">Machines</a></li>
-        <li><a href="../pages/jobs.html">Métiers</a></li>
         <li><a href="../pages/other.html">Utilitaire</a></li>
         <li><a href="../pages/luckyblock.html">Lucky-Blocks</a></li>
         <li><a href="../pages/grade.html">Grade</a></li>
         <li><a href="../pages/commandes.html">Commandes</a></li>
         <li><a href="../pages/regles.html">Règles</a></li>
-        <li><a href="../pages/endgame.html">End-Game</a></li>
+        <li><a href="../pages/endgame.html" class="magistral-color">Le Plutonium</a></li>
       </ul>
     </nav>
   </header>
@@ -39,13 +38,16 @@
 
       <table>
         <tr>
-          <th>Illustration</th>
+          <th>Illustration l'ingot</th>
+          <th>Illustration du Minerai</th>
           <th>Minerai</th>
           <th>Rareté</th>
           <th>Utilité</th>
+          <th>Que faire avec ?</th>
         </tr>
         <tr>
           <td><img src="../images/items/steel_ingot.png" alt="acier" class="ore-img"></td>
+          <td><img src="../images/blocks/steel_ore.png" alt="steel_ore" class="ore-img"></td>
           <td>Acier</td>
           <td>Rare</td>
           <td>Énergie pour machines avancées</td>
@@ -53,17 +55,27 @@
         </tr>
         <tr>
           <td><img src="../images/items/bauxite_ingot.png" alt="bauxite_ingot" class="ore-img"></td>
+          <td><img src="../images/blocks/bauxite_ore.png" alt="bauxite_ore" class="ore-img"></td>
           <td>Bauxite</td>
-          <td>Peu commun</td>
+          <td>Assez rare</td>
           <td>Crafts de circuits</td>
           <td><a href="#crafts-armes-armures_bauxite" class="craft-link">Voir les crafts possibles</a></td>
         </tr>
         <tr>
           <td><img src="../images/items/jadeite_ingot.png" alt="jadeite" class="ore-img"></td>
+          <td><img src="../images/blocks/jadeite_ore.png" alt="jadeite_ore" class="ore-img"></td>
           <td>Jadeite</td>
           <td>Très rare</td>
           <td>Armes et armures légendaires</td>
           <td><a href="#crafts-armes-armures_jadeite" class="craft-link">Voir les crafts possibles</a></td>
+        </tr>
+        <tr>
+          <td><img src="../images/items/plutonium_ingot.png" alt="jadeite" class="ore-img"></td>
+          <td><img src="../images/blocks/instable_plutonium_ore.png" alt="plutonium_ore" class="ore-img"></td>
+          <td>Plutonium</td>
+          <td>Mythique</td>
+          <td>Immersion dans un monde nucléaire</td>
+          <td><a href="#crafts-plutonium" class="craft-link">Voir les crafts possibles</a></td>
         </tr>
       </table>
     </section>
@@ -245,6 +257,46 @@
         <td>Rare</td>
       </tr>
 
+      <tr>
+        <td>
+          <div class="minecraft-inventory">
+            <div class="slot"><img src="../images/items/steel_ingot.png" alt="steel_ingot" title="Lingot d'Acier"></div>
+            <div class="slot"><img src="../images/items/steel_ingot.png" alt="steel_ingot" title="Lingot d'Acier"></div>
+            <div class="slot"><img src="../images/items/steel_ingot.png" alt="steel_ingot" title="Lingot d'Acier"></div>
+            <div class="slot"><img src="../images/items/steel_ingot.png" alt="steel_ingot" title="Lingot d'Acier"></div>
+            <div class="slot"><img src="../images/items/steel_ingot.png" alt="steel_ingot" title="Lingot d'Acier"></div>
+            <div class="slot"><img src="../images/items/steel_ingot.png" alt="steel_ingot" title="Lingot d'Acier"></div>
+            <div class="slot"><img src="../images/items/steel_ingot.png" alt="steel_ingot" title="Lingot d'Acier"></div>
+            <div class="slot"><img src="../images/items/steel_ingot.png" alt="steel_ingot" title="Lingot d'Acier"></div>
+            <div class="slot"><img src="../images/items/steel_ingot.png" alt="steel_ingot" title="Lingot d'Acier"></div>
+          </div>
+        </td>
+        <td>
+          <div class="slot_result"><img src="../images/blocks/steel_block.png" alt="steel_block" title="Block d'Acier"></div>
+        </td>
+        <td>Rare</td>
+      </tr>
+
+      <tr>
+        <td>
+          <div class="minecraft-inventory">
+            <div class="slot"></div>
+            <div class="slot"><img src="../images/items/steel_ingot.png" alt="steel_ingot" title="Lingot d'Acier"></div>
+            <div class="slot"></div>
+            <div class="slot"></div>
+            <div class="slot"><img src="../images/items/steel_ingot.png" alt="steel_ingot" title="Lingot d'Acier"></div>
+            <div class="slot"></div>
+            <div class="slot"></div>
+            <div class="slot"><img src="../images/items/steel_ingot.png" alt="steel_ingot" title="Lingot d'Acier"></div>
+            <div class="slot"></div>
+          </div>
+        </td>
+        <td>
+          <div class="slot_result"><img src="../images/items/steel_rod.png" alt="steel_rod" title="Tige en Acier"></div>
+        </td>
+        <td>Rare</td>
+      </tr>
+
     </table>
   </section>
 
@@ -422,6 +474,26 @@
         </td>
         <td>
           <div class="slot_result"><img src="../images/items/bauxite_boots.png" alt="Bottes en bauxite" title="Bottes en bauxite"></div>
+        </td>
+        <td>Rare</td>
+      </tr>
+
+      <tr>
+        <td>
+          <div class="minecraft-inventory">
+            <div class="slot"><img src="../images/items/bauxite_ingot.png" alt="bauxite_ingot" title="Lingot de bauxite"></div>
+            <div class="slot"><img src="../images/items/bauxite_ingot.png" alt="bauxite_ingot" title="Lingot de bauxite"></div>
+            <div class="slot"><img src="../images/items/bauxite_ingot.png" alt="bauxite_ingot" title="Lingot de bauxite"></div>
+            <div class="slot"><img src="../images/items/bauxite_ingot.png" alt="bauxite_ingot" title="Lingot de bauxite"></div>
+            <div class="slot"><img src="../images/items/bauxite_ingot.png" alt="bauxite_ingot" title="Lingot de bauxite"></div>
+            <div class="slot"><img src="../images/items/bauxite_ingot.png" alt="bauxite_ingot" title="Lingot de bauxite"></div>
+            <div class="slot"><img src="../images/items/bauxite_ingot.png" alt="bauxite_ingot" title="Lingot de bauxite"></div>
+            <div class="slot"><img src="../images/items/bauxite_ingot.png" alt="bauxite_ingot" title="Lingot de bauxite"></div>
+            <div class="slot"><img src="../images/items/bauxite_ingot.png" alt="bauxite_ingot" title="Lingot de bauxite"></div>
+          </div>
+        </td>
+        <td>
+          <div class="slot_result"><img src="../images/blocks/bauxite_block.png" alt="bauxite_block" title="Block de bauxite"></div>
         </td>
         <td>Rare</td>
       </tr>
@@ -626,9 +698,80 @@
         <td>Rare</td>
       </tr>
 
+       <tr>
+        <td>
+          <div class="minecraft-inventory">
+            <div class="slot"><img src="../images/items/jadeite_ingot.png" alt="jadeite_ingot" title="Lingot de Jadeite"></div>
+            <div class="slot"><img src="../images/items/jadeite_ingot.png" alt="jadeite_ingot" title="Lingot de Jadeite"></div>
+            <div class="slot"><img src="../images/items/jadeite_ingot.png" alt="jadeite_ingot" title="Lingot de Jadeite"></div>
+            <div class="slot"><img src="../images/items/jadeite_ingot.png" alt="jadeite_ingot" title="Lingot de Jadeite"></div>
+            <div class="slot"><img src="../images/items/jadeite_ingot.png" alt="jadeite_ingot" title="Lingot de Jadeite"></div>
+            <div class="slot"><img src="../images/items/jadeite_ingot.png" alt="jadeite_ingot" title="Lingot de Jadeite"></div>
+            <div class="slot"><img src="../images/items/jadeite_ingot.png" alt="jadeite_ingot" title="Lingot de Jadeite"></div>
+            <div class="slot"><img src="../images/items/jadeite_ingot.png" alt="jadeite_ingot" title="Lingot de Jadeite"></div>
+            <div class="slot"><img src="../images/items/jadeite_ingot.png" alt="jadeite_ingot" title="Lingot de Jadeite"></div>
+          </div>
+        </td>
+        <td>
+          <div class="slot_result"><img src="../images/blocks/jadeite_block.png" alt="jadeite_block" title="Block de Jadeite"></div>
+        </td>
+        <td>Rare</td>
+      </tr>
+
     </table>
   </section>
 
+  <section id="crafts-plutonium" class="crafts-section">
+  <h3>Craft disponible avec le Plutonium</h3>
+  <table>
+    <tr>
+      <th>Craft</th>
+      <th>Résultat</th>
+      <th>Rareté</th>
+    </tr>
+
+      <tr>
+        <td>
+          <div class="minecraft-inventory">
+            <div class="slot"></div>
+            <div class="slot"><img src="../images/items/plutonium_ingot.png" alt="plutonium_ingot" title="Lingot de Plutonium"></div>
+            <div class="slot"></div>
+            <div class="slot"></div>
+            <div class="slot"><img src="../images/items/plutonium_ingot.png" alt="plutonium_ingot" title="Lingot de Plutonium"></div>
+            <div class="slot"></div>
+            <div class="slot"></div>
+            <div class="slot"><img src="../images/items/plutonium_ingot.png" alt="plutonium_ingot" title="Lingot de Plutonium"></div>
+            <div class="slot"></div>
+          </div>
+        </td>
+        <td>
+          <div class="slot_result"><img src="../images/items/plutonium_slimy.png" alt="plutonium_slimy" title="Plutonium visqueux"></div>
+        </td>
+        <td>Très très rare</td>
+      </tr>
+
+      <tr>
+        <td>
+          <div class="minecraft-inventory">
+            <div class="slot"><img src="../images/items/nether_star.png" alt="nether_star" title="Etoile du nether"></div>
+            <div class="slot"><img src="../images/items/plutonium_heart.png" alt="plutonium_heart" title="Coeur en Plutonium"></div>
+            <div class="slot"><img src="../images/items/nether_star.png" alt="nether_star" title="Etoile du nether"></div>
+            <div class="slot"><img src="../images/items/steel_plate.png" alt="steel_plate" title="Plaque en acier"></div>
+            <div class="slot"><img src="../images/items/perfect_circuit.png" alt="perfect_circuit" title="Circuit parfait"></div>
+            <div class="slot"><img src="../images/items/steel_plate.png" alt="steel_plate" title="Plaque en acier"></div>
+            <div class="slot"><img src="../images/blocks/steel_block.png" alt="steel_block" title="Block d'acier"></div>
+            <div class="slot"><img src="../images/items/steel_plate.png" alt="steel_plate" title="Plaque en acier"></div>
+            <div class="slot"><img src="../images/blocks/steel_block.png" alt="steel_block" title="Block d'acier"></div>
+          </div>
+        </td>
+        <td>
+          <div class="slot_result"><img src="../images/blocks/core_generator.png" alt="core_generator" title="Coeur du générateur nucléaire"></div>
+        </td>
+        <td >Magistrale</td>
+      </tr>
+
+  </table>
+</section>
   </main>
 
   <footer>
